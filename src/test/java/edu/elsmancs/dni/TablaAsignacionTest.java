@@ -12,4 +12,10 @@ public class TablaAsignacionTest {
 		System.out.println(tabla.getLetra(0));
 		System.out.println(tabla.getLetra(22));
     }
+	
+	@Test
+    public void getCantidadLetrasTest() {
+		TablaAsignacion tabla = new TablaAsignacion();
+		assertEquals(tabla.getCantidadLetras(), 23);
+    }
 }

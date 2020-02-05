@@ -13,4 +13,6 @@ public class TablaAsignacion {
 	public int getCantidadLetras() {
 		return this.tablaLetras.length;
 	}
+	
+	
 }
