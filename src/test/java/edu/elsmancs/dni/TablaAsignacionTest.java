@@ -18,4 +18,15 @@ public class TablaAsignacionTest {
 		TablaAsignacion tabla = new TablaAsignacion();
 		assertEquals(tabla.getCantidadLetras(), 23);
     }
+	
+	@Test
+	public void calcularLetraresto2() {
+		TablaAsignacion dni = new TablaAsignacion();
+		assertEquals(dni.calcularLetra(43235632), 'W');
+	}
+	
+	public void calcularLetraresto17() {
+		TablaAsignacion dni = new TablaAsignacion();
+		assertEquals(dni.calcularLetra(6194561), 'V');
+	}
 }
