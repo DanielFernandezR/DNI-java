@@ -22,11 +22,11 @@ public class TablaAsignacionTest {
 	@Test
 	public void calcularLetraresto2() {
 		TablaAsignacion dni = new TablaAsignacion();
-		assertEquals(dni.calcularLetra(43235632), 'W');
+		assertEquals(dni.calcularLetra("43235632"), 'W');
 	}
-	
+	@Test
 	public void calcularLetraresto17() {
 		TablaAsignacion dni = new TablaAsignacion();
-		assertEquals(dni.calcularLetra(6194561), 'V');
+		assertEquals(dni.calcularLetra("6194561"), 'V');
 	}
 }
