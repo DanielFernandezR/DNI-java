@@ -1,14 +1,16 @@
 package edu.elsmancs.dni;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
 public class DniTest {
 
+	private Dni dniprueba;
+
 	@Test
-	public void getDNITest() {
-		Dni dniprueba = new Dni();
-		assertEquals(dniprueba.getDNI(43235632), "43235632W");
+	public void checkNumDNI() {
+		dniprueba = new Dni("43235632W");
+		assertTrue(dniprueba.checkNumeroDNI());
 	}
 }
